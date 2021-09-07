@@ -1,0 +1,49 @@
+package com.nagarro.nes.models;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+@JsonInclude(Include.NON_NULL)
+public class BaseResponse<T> extends BaseErrorResponse<T> {
+
+	/** The data. */
+	private T data;
+
+	/**
+	 * Instantiates a new scheduler base response.
+	 *
+	 * @param data the data
+	 */
+	public BaseResponse(T data) {
+		super();
+		this.data = data;
+	}
+
+	public BaseResponse(final String errorCode, final String message) {
+		super(errorCode, message);
+	}
+
+	public BaseResponse(T data, final String errorCode, final String message) {
+		super(errorCode, message);
+		this.data = data;
+	}
+
+	/**
+	 * Gets the data.
+	 *
+	 * @return the data
+	 */
+	public T getData() {
+		return data;
+	}
+
+	/**
+	 * Sets the data.
+	 *
+	 * @param data the new data
+	 */
+	public void setData(T data) {
+		this.data = data;
+	}
+
+}

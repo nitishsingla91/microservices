@@ -1,0 +1,11 @@
+spring:
+  profiles: 
+    active: ${ACIVE_PROFILE:dev}
+  rabbitmq: 
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:8087}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_HOST:http://localhost:8761/eureka}

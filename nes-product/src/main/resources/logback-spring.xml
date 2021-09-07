@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<!-- add properties required -->
+	<springProperty name="appName"
+		source="spring.application.name" />
+	<property name="logPath" value="logs" />
+
+<!-- for console messages  -->
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>
+				%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) ${HOSTNAME} - ${appName} - %logger.%M\(%line\) - %msg%n 
+			</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="fileAppender"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logPath}/${appName}_log.log</file>
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level ${HOSTNAME} - ${appName} - %logger.%M\(%line\) - %msg%n </Pattern>
+		</encoder>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/${appName}_%d{dd-MM-yyyy}_%i.log
+			</fileNamePattern>
+			<maxFileSize>10MB</maxFileSize>
+		</rollingPolicy>
+	</appender>
+
+	<springProfile name="dev">
+		<root level="info">
+			<appender-ref ref="STDOUT" />
+			<appender-ref ref="fileAppender" />
+		</root>
+		<logger name="com.nagarro" level="debug"></logger>
+	</springProfile>
+
+	<springProfile name="prod">
+		<root level="info">
+			<appender-ref ref="fileAppender" />
+		</root>
+		<logger name="com.nagarro" additivity="false" level="debug">
+			<appender-ref ref="fileAppender" />
+		</logger>
+	</springProfile>
+
+</configuration>

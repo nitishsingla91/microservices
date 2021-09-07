@@ -1,0 +1,7 @@
+package com.nagarro.nes.enums;
+
+public enum OrderState {
+
+	CREATED, APPROVED, FAILED, PACKAGING_IN_PROGRESS, PREPARED, SHIPPED, OUT_FOR_DELIVERY, DELIVERED, UNDELIVERED
+
+}

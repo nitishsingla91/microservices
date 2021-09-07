@@ -1,0 +1,10 @@
+[
+  {
+    "category": "Deodorant",
+    "description": "AXE Deodorant Body Spray",
+    "price": 100,
+    "productID": 11616,
+    "productName": "AXE Deo",
+    "quantities": 100
+  }
+]

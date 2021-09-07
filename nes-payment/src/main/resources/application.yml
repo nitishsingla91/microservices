@@ -1,0 +1,14 @@
+spring:
+  profiles: 
+    active: ${ACIVE_PROFILE:dev}
+  rabbitmq: 
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:8087}
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    
+server:
+  port: 8083

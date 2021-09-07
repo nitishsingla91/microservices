@@ -1,0 +1,256 @@
+12-02-2020 15:16:17.280 [main] INFO 
+				c.nagarro.nes.NESProductApplication.logStartupProfileInfo - The following profiles are active: dev
+12-02-2020 15:16:18.001 [main] INFO 
+				o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=e777e01a-27be-3fff-a645-06672d279009
+12-02-2020 15:16:18.090 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12-02-2020 15:16:18.271 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+12-02-2020 15:16:18.279 [main] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+12-02-2020 15:16:18.280 [main] INFO 
+				o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+12-02-2020 15:16:18.280 [main] INFO 
+				o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.30]
+12-02-2020 15:16:18.396 [main] INFO 
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+12-02-2020 15:16:18.397 [main] INFO 
+				o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1106 ms
+12-02-2020 15:16:18.732 [main] INFO 
+				s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12-02-2020 15:16:18.746 [main] WARN 
+				c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+12-02-2020 15:16:18.747 [main] INFO 
+				c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+12-02-2020 15:16:18.750 [main] WARN 
+				c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+12-02-2020 15:16:18.750 [main] INFO 
+				c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+12-02-2020 15:16:18.892 [main] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+12-02-2020 15:16:21.203 [main] WARN 
+				o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger.logWarning - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+12-02-2020 15:16:21.234 [main] WARN 
+				o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning - Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+12-02-2020 15:16:21.266 [main] INFO 
+				o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+12-02-2020 15:16:21.328 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+12-02-2020 15:16:21.472 [main] INFO 
+				c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON encoding codec LegacyJacksonJson
+12-02-2020 15:16:21.473 [main] INFO 
+				c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON decoding codec LegacyJacksonJson
+12-02-2020 15:16:21.582 [main] INFO 
+				c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML encoding codec XStreamXml
+12-02-2020 15:16:21.583 [main] INFO 
+				c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML decoding codec XStreamXml
+12-02-2020 15:16:21.740 [main] INFO 
+				c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+12-02-2020 15:16:22.234 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+12-02-2020 15:16:22.234 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+12-02-2020 15:16:22.234 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+12-02-2020 15:16:22.234 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+12-02-2020 15:16:22.235 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+12-02-2020 15:16:22.235 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+12-02-2020 15:16:22.235 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+12-02-2020 15:16:22.325 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+12-02-2020 15:16:22.326 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+12-02-2020 15:16:22.329 [main] INFO 
+				c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+12-02-2020 15:16:22.332 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1581500782331 with initial instances count: 0
+12-02-2020 15:16:22.333 [main] INFO 
+				o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application NES-PRODUCT with eureka with status UP
+12-02-2020 15:16:22.334 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1581500782334, current=UP, previous=STARTING]
+12-02-2020 15:16:22.336 [main] INFO 
+				s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+12-02-2020 15:16:22.337 [DiscoveryClient-InstanceInfoReplicator-0] INFO 
+				c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product: registering service...
+12-02-2020 15:16:22.353 [main] INFO 
+				s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+12-02-2020 15:16:22.394 [DiscoveryClient-InstanceInfoReplicator-0] INFO 
+				c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product - registration status: 204
+12-02-2020 15:16:22.402 [main] INFO 
+				s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+12-02-2020 15:16:22.586 [main] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+12-02-2020 15:16:22.611 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+12-02-2020 15:16:22.614 [main] INFO 
+				o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 8080
+12-02-2020 15:16:23.343 [main] INFO 
+				c.nagarro.nes.NESProductApplication.logStarted - Started NESProductApplication in 8.155 seconds (JVM running for 9.255)
+12-02-2020 15:16:52.328 [DiscoveryClient-CacheRefreshExecutor-0] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+12-02-2020 15:16:52.329 [DiscoveryClient-CacheRefreshExecutor-0] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+12-02-2020 15:16:52.329 [DiscoveryClient-CacheRefreshExecutor-0] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+12-02-2020 15:16:52.329 [DiscoveryClient-CacheRefreshExecutor-0] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+12-02-2020 15:16:52.329 [DiscoveryClient-CacheRefreshExecutor-0] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+12-02-2020 15:16:52.329 [DiscoveryClient-CacheRefreshExecutor-0] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: false
+12-02-2020 15:16:52.329 [DiscoveryClient-CacheRefreshExecutor-0] INFO 
+				c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+12-02-2020 15:16:52.359 [DiscoveryClient-CacheRefreshExecutor-0] INFO 
+				c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+12-02-2020 15:17:01.733 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+12-02-2020 15:17:01.734 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application NES-PRODUCT with eureka with status DOWN
+12-02-2020 15:17:01.734 [RMI TCP Connection(9)-127.0.0.1] WARN 
+				c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1581500821734, current=DOWN, previous=UP]
+12-02-2020 15:17:01.734 [DiscoveryClient-InstanceInfoReplicator-0] INFO 
+				c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product: registering service...
+12-02-2020 15:17:01.737 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+12-02-2020 15:17:01.740 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+12-02-2020 15:17:01.741 [DiscoveryClient-InstanceInfoReplicator-0] INFO 
+				c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product - registration status: 204
+12-02-2020 15:17:01.742 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+12-02-2020 15:17:01.746 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product - deregister  status: 200
+12-02-2020 15:17:01.755 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+12-02-2020 15:17:01.756 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Pausing ProtocolHandler ["http-nio-8080"]
+12-02-2020 15:17:02.189 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+12-02-2020 15:17:02.194 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Stopping ProtocolHandler ["http-nio-8080"]
+12-02-2020 15:17:02.199 [RMI TCP Connection(9)-127.0.0.1] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Destroying ProtocolHandler ["http-nio-8080"]
+12-02-2020 15:17:10.280 [main] INFO 
+				c.nagarro.nes.NESProductApplication.logStartupProfileInfo - The following profiles are active: dev
+12-02-2020 15:17:10.998 [main] INFO 
+				o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=e777e01a-27be-3fff-a645-06672d279009
+12-02-2020 15:17:11.082 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12-02-2020 15:17:11.251 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+12-02-2020 15:17:11.258 [main] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+12-02-2020 15:17:11.258 [main] INFO 
+				o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+12-02-2020 15:17:11.259 [main] INFO 
+				o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.30]
+12-02-2020 15:17:11.379 [main] INFO 
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+12-02-2020 15:17:11.379 [main] INFO 
+				o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1089 ms
+12-02-2020 15:17:11.689 [main] INFO 
+				s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12-02-2020 15:17:11.708 [main] WARN 
+				c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+12-02-2020 15:17:11.709 [main] INFO 
+				c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+12-02-2020 15:17:11.713 [main] WARN 
+				c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+12-02-2020 15:17:11.714 [main] INFO 
+				c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+12-02-2020 15:17:11.857 [main] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+12-02-2020 15:17:14.083 [main] WARN 
+				o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger.logWarning - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+12-02-2020 15:17:14.113 [main] WARN 
+				o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning - Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+12-02-2020 15:17:14.140 [main] INFO 
+				o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+12-02-2020 15:17:14.182 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+12-02-2020 15:17:14.312 [main] INFO 
+				c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON encoding codec LegacyJacksonJson
+12-02-2020 15:17:14.313 [main] INFO 
+				c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON decoding codec LegacyJacksonJson
+12-02-2020 15:17:14.409 [main] INFO 
+				c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML encoding codec XStreamXml
+12-02-2020 15:17:14.410 [main] INFO 
+				c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML decoding codec XStreamXml
+12-02-2020 15:17:14.557 [main] INFO 
+				c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+12-02-2020 15:17:15.070 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+12-02-2020 15:17:15.071 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+12-02-2020 15:17:15.071 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+12-02-2020 15:17:15.071 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+12-02-2020 15:17:15.071 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+12-02-2020 15:17:15.072 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+12-02-2020 15:17:15.072 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+12-02-2020 15:17:15.224 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+12-02-2020 15:17:15.228 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+12-02-2020 15:17:15.230 [main] INFO 
+				c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+12-02-2020 15:17:15.233 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1581500835232 with initial instances count: 1
+12-02-2020 15:17:15.235 [main] INFO 
+				o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application NES-PRODUCT with eureka with status UP
+12-02-2020 15:17:15.235 [main] INFO 
+				c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1581500835235, current=UP, previous=STARTING]
+12-02-2020 15:17:15.237 [DiscoveryClient-InstanceInfoReplicator-0] INFO 
+				c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product: registering service...
+12-02-2020 15:17:15.237 [main] INFO 
+				s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+12-02-2020 15:17:15.255 [main] INFO 
+				s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+12-02-2020 15:17:15.274 [DiscoveryClient-InstanceInfoReplicator-0] INFO 
+				c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product - registration status: 204
+12-02-2020 15:17:15.302 [main] INFO 
+				s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+12-02-2020 15:17:15.465 [main] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+12-02-2020 15:17:15.499 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+12-02-2020 15:17:15.500 [main] INFO 
+				o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 8080
+12-02-2020 15:17:16.982 [main] INFO 
+				c.nagarro.nes.NESProductApplication.logStarted - Started NESProductApplication in 8.829 seconds (JVM running for 9.892)
+12-02-2020 15:19:01.686 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+12-02-2020 15:19:01.687 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application NES-PRODUCT with eureka with status DOWN
+12-02-2020 15:19:01.687 [RMI TCP Connection(10)-127.0.0.1] WARN 
+				c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1581500941687, current=DOWN, previous=UP]
+12-02-2020 15:19:01.687 [DiscoveryClient-InstanceInfoReplicator-0] INFO 
+				c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product: registering service...
+12-02-2020 15:19:01.690 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+12-02-2020 15:19:01.693 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+12-02-2020 15:19:01.694 [DiscoveryClient-InstanceInfoReplicator-0] INFO 
+				c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product - registration status: 204
+12-02-2020 15:19:01.695 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+12-02-2020 15:19:01.700 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_NES-PRODUCT/Cheta314718101.Nagarro.local:nes-product - deregister  status: 200
+12-02-2020 15:19:01.709 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+12-02-2020 15:19:01.710 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Pausing ProtocolHandler ["http-nio-8080"]
+12-02-2020 15:19:02.142 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+12-02-2020 15:19:02.147 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Stopping ProtocolHandler ["http-nio-8080"]
+12-02-2020 15:19:02.151 [RMI TCP Connection(10)-127.0.0.1] INFO 
+				o.a.coyote.http11.Http11NioProtocol.log - Destroying ProtocolHandler ["http-nio-8080"]

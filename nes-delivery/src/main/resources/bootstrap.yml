@@ -1,0 +1,5 @@
+# will be required for logback file run before application.yml
+spring:
+  application:
+    name: nes-delivery
+  

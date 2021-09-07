@@ -1,0 +1,818 @@
+13-02-2020 12:53:38.887 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStartupProfileInfo(655) - The following profiles are active: dev
+13-02-2020 12:53:39.948 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.context.scope.GenericScope.setSerializationId(295) - BeanFactory id=eec51fc1-c395-36ce-83cf-124ea72cda30
+13-02-2020 12:53:40.064 [main] INFO  Cheta314718101 - nes-user - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(330) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13-02-2020 12:53:40.294 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(92) - Tomcat initialized with port(s): 8081 (http)
+13-02-2020 12:53:40.302 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8081"]
+13-02-2020 12:53:40.303 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+13-02-2020 12:53:40.304 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.30]
+13-02-2020 12:53:40.439 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+13-02-2020 12:53:40.440 [main] INFO  Cheta314718101 - nes-user - org.springframework.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 1535 ms
+13-02-2020 12:53:40.509 [main] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.store.DeliveryStore.init(24) - Storing some users before initialisation
+13-02-2020 12:53:40.779 [main] WARN  Cheta314718101 - nes-user - org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.refresh(558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String) mapped.
+13-02-2020 12:53:40.783 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Stopping service [Tomcat]
+13-02-2020 12:53:40.799 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13-02-2020 12:53:40.809 [main] ERROR Cheta314718101 - nes-user - org.springframework.boot.SpringApplication.reportFailure(826) - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.nagarro.nes.NESDeliveryApplication.main(NESDeliveryApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1503)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1467)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1503)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1467)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:632)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:599)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:350)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 50 common frames omitted
+13-02-2020 12:55:29.203 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStartupProfileInfo(655) - The following profiles are active: dev
+13-02-2020 12:55:30.202 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.context.scope.GenericScope.setSerializationId(295) - BeanFactory id=eec51fc1-c395-36ce-83cf-124ea72cda30
+13-02-2020 12:55:30.323 [main] INFO  Cheta314718101 - nes-user - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(330) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13-02-2020 12:55:30.518 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(92) - Tomcat initialized with port(s): 8081 (http)
+13-02-2020 12:55:30.526 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8081"]
+13-02-2020 12:55:30.527 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+13-02-2020 12:55:30.527 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.30]
+13-02-2020 12:55:30.677 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+13-02-2020 12:55:30.678 [main] INFO  Cheta314718101 - nes-user - org.springframework.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 1456 ms
+13-02-2020 12:55:30.760 [main] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.store.DeliveryStore.init(24) - Storing some users before initialisation
+13-02-2020 12:55:31.033 [main] WARN  Cheta314718101 - nes-user - org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.refresh(558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String) mapped.
+13-02-2020 12:55:31.035 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Stopping service [Tomcat]
+13-02-2020 12:55:31.048 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13-02-2020 12:55:31.057 [main] ERROR Cheta314718101 - nes-user - org.springframework.boot.SpringApplication.reportFailure(826) - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.nagarro.nes.NESDeliveryApplication.main(NESDeliveryApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/chetanmahajan/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1503)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1467)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1503)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1467)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'deliveryController' method 
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByDeliveryID(String)
+to {GET /delivery}: There is already 'deliveryController' bean method
+com.nagarro.nes.api.DeliveryController#getDeliveryDetailsByOrderID(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:632)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:599)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:350)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 50 common frames omitted
+13-02-2020 13:40:41.100 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStartupProfileInfo(655) - The following profiles are active: dev
+13-02-2020 13:40:41.912 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.context.scope.GenericScope.setSerializationId(295) - BeanFactory id=eec51fc1-c395-36ce-83cf-124ea72cda30
+13-02-2020 13:40:42.003 [main] INFO  Cheta314718101 - nes-user - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(330) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13-02-2020 13:40:42.182 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(92) - Tomcat initialized with port(s): 8081 (http)
+13-02-2020 13:40:42.190 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8081"]
+13-02-2020 13:40:42.191 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+13-02-2020 13:40:42.192 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.30]
+13-02-2020 13:40:42.321 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+13-02-2020 13:40:42.321 [main] INFO  Cheta314718101 - nes-user - org.springframework.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 1203 ms
+13-02-2020 13:40:42.374 [main] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.store.DeliveryStore.init(24) - Storing some users before initialisation
+13-02-2020 13:40:42.788 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13-02-2020 13:40:42.809 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 13:40:42.810 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 13:40:42.815 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 13:40:42.816 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 13:40:42.995 [main] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
+13-02-2020 13:40:46.032 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger.logWarning(106) - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+13-02-2020 13:40:46.073 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning(81) - Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+13-02-2020 13:40:46.103 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.InstanceInfoFactory.create(72) - Setting initial instance status as: STARTING
+13-02-2020 13:40:46.142 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(365) - Initializing Eureka in region us-east-1
+13-02-2020 13:40:46.281 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(70) - Using JSON encoding codec LegacyJacksonJson
+13-02-2020 13:40:46.282 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(71) - Using JSON decoding codec LegacyJacksonJson
+13-02-2020 13:40:46.470 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(80) - Using XML encoding codec XStreamXml
+13-02-2020 13:40:46.470 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(81) - Using XML decoding codec XStreamXml
+13-02-2020 13:40:46.633 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 13:40:47.260 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 13:40:47.261 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 13:40:47.261 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 13:40:47.262 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 13:40:47.262 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 13:40:47.262 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: true
+13-02-2020 13:40:47.262 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 13:40:47.509 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 13:40:47.511 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.initScheduledTasks(1288) - Starting heartbeat executor: renew interval is: 30
+13-02-2020 13:40:47.514 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.InstanceInfoReplicator.<init>(60) - InstanceInfoReplicator onDemand update allowed rate per min is 4
+13-02-2020 13:40:47.517 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(465) - Discovery Client initialized at timestamp 1581581447516 with initial instances count: 0
+13-02-2020 13:40:47.519 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(41) - Registering application NES-USER with eureka with status UP
+13-02-2020 13:40:47.519 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1323) - Saw local status change event StatusChangeEvent [timestamp=1581581447519, current=UP, previous=STARTING]
+13-02-2020 13:40:47.521 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 13:40:47.521 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(147) - Context refreshed
+13-02-2020 13:40:47.543 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(150) - Found 1 custom documentation plugin(s)
+13-02-2020 13:40:47.592 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(41) - Scanning for api listing references
+13-02-2020 13:40:47.644 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 13:40:47.745 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Starting ProtocolHandler ["http-nio-8081"]
+13-02-2020 13:40:47.791 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(204) - Tomcat started on port(s): 8081 (http) with context path ''
+13-02-2020 13:40:47.793 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(145) - Updating port to 8081
+13-02-2020 13:40:48.768 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStarted(61) - Started NESDeliveryApplication in 10.366 seconds (JVM running for 11.773)
+13-02-2020 13:41:17.512 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 13:41:17.513 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 13:41:17.513 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 13:41:17.513 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 13:41:17.513 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 13:41:17.513 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: false
+13-02-2020 13:41:17.513 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 13:41:17.558 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 13:41:41.422 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13-02-2020 13:41:41.422 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(525) - Initializing Servlet 'dispatcherServlet'
+13-02-2020 13:41:41.428 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(547) - Completed initialization in 6 ms
+13-02-2020 13:41:57.887 [http-nio-8081-exec-2] INFO  Cheta314718101 - nes-user - com.nagarro.nes.api.DeliveryController.updateDeliveryState(50) - Recieved Update Delivery state request user request
+13-02-2020 13:41:57.889 [http-nio-8081-exec-2] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.exceptions.advices.ExceptionController.handleException(179) - Bad Request Exception Controller in process
+13-02-2020 13:42:08.404 [http-nio-8081-exec-6] INFO  Cheta314718101 - nes-user - com.nagarro.nes.api.DeliveryController.updateDeliveryState(50) - Recieved Update Delivery state request user request
+13-02-2020 13:42:08.404 [http-nio-8081-exec-6] INFO  Cheta314718101 - nes-user - com.nagarro.nes.services.impl.DeliveryServiceImpl.updateDeliveryState(26) - Updating state of order with id:abcd with state:PREPARED
+13-02-2020 13:42:08.405 [http-nio-8081-exec-6] ERROR Cheta314718101 - nes-user - com.nagarro.nes.exceptions.advices.ExceptionController.handleException(144) - Exception with error code :notfound.delivery
+13-02-2020 13:43:47.560 [http-nio-8081-exec-10] INFO  Cheta314718101 - nes-user - com.nagarro.nes.api.DeliveryController.getDeliveryDetailsByOrderID(35) - Recieved get Delivery request by order
+13-02-2020 13:43:47.561 [http-nio-8081-exec-10] INFO  Cheta314718101 - nes-user - com.nagarro.nes.services.impl.DeliveryServiceImpl.getDeliveryDetailsByOrderID(62) - Getting delivery with order:abcd
+13-02-2020 13:43:47.562 [http-nio-8081-exec-10] ERROR Cheta314718101 - nes-user - com.nagarro.nes.exceptions.advices.ExceptionController.handleException(144) - Exception with error code :notfound.delivery
+13-02-2020 13:45:47.266 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 13:50:47.268 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 13:55:47.483 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:00:47.489 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:05:47.491 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:10:47.493 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:15:47.495 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:20:47.497 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:25:47.498 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:30:47.502 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:35:47.503 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:40:47.508 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:45:47.513 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:50:47.514 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 14:55:47.516 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 15:00:47.516 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 15:05:47.519 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 15:10:47.520 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 15:15:47.521 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 15:20:47.525 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 15:25:47.527 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 15:30:47.530 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 16:02:59.461 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 16:07:59.463 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 16:12:59.468 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 16:18:00.650 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 16:23:00.653 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 16:28:00.654 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 17:14:24.252 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 17:19:24.253 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 17:24:24.258 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 17:29:24.344 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 17:34:24.349 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 17:39:24.351 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 20:47:35.023 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 20:52:34.252 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 20:57:34.255 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:02:34.258 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:07:34.248 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:07:50.135 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(159) - Application shutdown requested.
+13-02-2020 21:07:50.190 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(65) - Unregistering application NES-USER with eureka with status DOWN
+13-02-2020 21:07:50.194 [RMI TCP Connection(208)-127.0.0.1] WARN  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1321) - Saw local status change event StatusChangeEvent [timestamp=1581608270194, current=DOWN, previous=UP]
+13-02-2020 21:07:50.198 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:07:50.226 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:07:50.294 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown(208) - Shutting down ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:07:50.351 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(906) - Shutting down DiscoveryClient ...
+13-02-2020 21:07:53.354 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(940) - Unregistering ...
+13-02-2020 21:07:53.406 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(942) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - deregister  status: 200
+13-02-2020 21:07:53.429 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(929) - Completed shut down of DiscoveryClient
+13-02-2020 21:07:53.445 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Pausing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:07:54.073 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Stopping service [Tomcat]
+13-02-2020 21:07:54.095 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Destroying Spring FrameworkServlet 'dispatcherServlet'
+13-02-2020 21:07:54.119 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Stopping ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:07:54.135 [RMI TCP Connection(208)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Destroying ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:08:04.101 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStartupProfileInfo(655) - The following profiles are active: dev
+13-02-2020 21:08:05.125 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.context.scope.GenericScope.setSerializationId(295) - BeanFactory id=710f4a47-0e7c-310c-ac66-cc442e40651d
+13-02-2020 21:08:05.273 [main] INFO  Cheta314718101 - nes-user - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(330) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13-02-2020 21:08:05.563 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(92) - Tomcat initialized with port(s): 8081 (http)
+13-02-2020 21:08:05.577 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:08:05.579 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+13-02-2020 21:08:05.579 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.30]
+13-02-2020 21:08:05.764 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+13-02-2020 21:08:05.764 [main] INFO  Cheta314718101 - nes-user - org.springframework.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 1647 ms
+13-02-2020 21:08:05.955 [main] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.store.DeliveryStore.init(24) - Storing some users before initialisation
+13-02-2020 21:08:06.346 [main] WARN  Cheta314718101 - nes-user - org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.refresh(558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'container' defined in class path resource [com/nagarro/nes/configuration/RabbitMQConfig.class]: Unsatisfied dependency expressed through method 'container' parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+13-02-2020 21:08:06.351 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Stopping service [Tomcat]
+13-02-2020 21:08:06.363 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13-02-2020 21:08:06.536 [main] ERROR Cheta314718101 - nes-user - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method container in com.nagarro.nes.configuration.RabbitMQConfig required a bean of type 'org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter' in your configuration.
+
+13-02-2020 21:08:53.873 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStartupProfileInfo(655) - The following profiles are active: dev
+13-02-2020 21:08:54.842 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.context.scope.GenericScope.setSerializationId(295) - BeanFactory id=71e9f3bb-f316-3546-9378-3117445538c7
+13-02-2020 21:08:54.956 [main] INFO  Cheta314718101 - nes-user - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(330) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13-02-2020 21:08:55.150 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(92) - Tomcat initialized with port(s): 8081 (http)
+13-02-2020 21:08:55.157 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:08:55.158 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+13-02-2020 21:08:55.159 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.30]
+13-02-2020 21:08:55.302 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+13-02-2020 21:08:55.303 [main] INFO  Cheta314718101 - nes-user - org.springframework.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 1404 ms
+13-02-2020 21:08:55.457 [main] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.store.DeliveryStore.init(24) - Storing some users before initialisation
+13-02-2020 21:08:55.828 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13-02-2020 21:08:55.851 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:08:55.851 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:08:55.859 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:08:55.859 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:08:55.997 [main] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:08:59.567 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger.logWarning(106) - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+13-02-2020 21:08:59.619 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning(81) - Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+13-02-2020 21:08:59.653 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.InstanceInfoFactory.create(72) - Setting initial instance status as: STARTING
+13-02-2020 21:08:59.704 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(365) - Initializing Eureka in region us-east-1
+13-02-2020 21:08:59.907 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(70) - Using JSON encoding codec LegacyJacksonJson
+13-02-2020 21:08:59.907 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(71) - Using JSON decoding codec LegacyJacksonJson
+13-02-2020 21:09:00.089 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(80) - Using XML encoding codec XStreamXml
+13-02-2020 21:09:00.090 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(81) - Using XML decoding codec XStreamXml
+13-02-2020 21:09:00.357 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:09:01.123 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:09:01.123 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:09:01.124 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:09:01.124 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:09:01.124 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:09:01.124 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: true
+13-02-2020 21:09:01.125 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:09:01.260 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:09:01.263 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.initScheduledTasks(1288) - Starting heartbeat executor: renew interval is: 30
+13-02-2020 21:09:01.266 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.InstanceInfoReplicator.<init>(60) - InstanceInfoReplicator onDemand update allowed rate per min is 4
+13-02-2020 21:09:01.271 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(465) - Discovery Client initialized at timestamp 1581608341269 with initial instances count: 0
+13-02-2020 21:09:01.273 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(41) - Registering application NES-USER with eureka with status UP
+13-02-2020 21:09:01.274 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1323) - Saw local status change event StatusChangeEvent [timestamp=1581608341274, current=UP, previous=STARTING]
+13-02-2020 21:09:01.276 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(147) - Context refreshed
+13-02-2020 21:09:01.305 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:09:01.322 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(150) - Found 1 custom documentation plugin(s)
+13-02-2020 21:09:01.377 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:09:01.402 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(41) - Scanning for api listing references
+13-02-2020 21:09:01.588 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Starting ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:09:01.626 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(204) - Tomcat started on port(s): 8081 (http) with context path ''
+13-02-2020 21:09:01.628 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(145) - Updating port to 8081
+13-02-2020 21:09:03.237 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStarted(61) - Started NESDeliveryApplication in 12.586 seconds (JVM running for 14.13)
+13-02-2020 21:09:31.263 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:09:31.263 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:09:31.264 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:09:31.264 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:09:31.264 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:09:31.264 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: false
+13-02-2020 21:09:31.265 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:09:31.307 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:11:20.850 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13-02-2020 21:11:20.850 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(525) - Initializing Servlet 'dispatcherServlet'
+13-02-2020 21:11:20.863 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(547) - Completed initialization in 12 ms
+13-02-2020 21:11:29.037 [http-nio-8081-exec-5] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect(524) - Attempting to connect to: [localhost:5672]
+13-02-2020 21:11:29.107 [http-nio-8081-exec-5] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection(497) - Created new connection: rabbitConnectionFactory#26cb5207:0/SimpleConnection@2bc254c7 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54873]
+13-02-2020 21:11:29.189 [http-nio-8081-exec-5] INFO  Cheta314718101 - nes-user - com.nagarro.nes.api.DeliveryController.getDeliveryDetailsByOrderID(40) - Recieved get Delivery request by order
+13-02-2020 21:11:29.190 [http-nio-8081-exec-5] INFO  Cheta314718101 - nes-user - com.nagarro.nes.services.impl.DeliveryServiceImpl.getDeliveryDetailsByOrderID(62) - Getting delivery with order:s
+13-02-2020 21:11:29.193 [http-nio-8081-exec-5] ERROR Cheta314718101 - nes-user - com.nagarro.nes.exceptions.advices.ExceptionController.handleException(144) - Exception with error code :notfound.delivery
+13-02-2020 21:14:01.127 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:16:19.602 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(159) - Application shutdown requested.
+13-02-2020 21:16:19.604 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(65) - Unregistering application NES-USER with eureka with status DOWN
+13-02-2020 21:16:19.604 [RMI TCP Connection(17)-127.0.0.1] WARN  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1321) - Saw local status change event StatusChangeEvent [timestamp=1581608779604, current=DOWN, previous=UP]
+13-02-2020 21:16:19.604 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:16:19.611 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown(208) - Shutting down ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:16:19.612 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:16:19.628 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(906) - Shutting down DiscoveryClient ...
+13-02-2020 21:16:22.632 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(940) - Unregistering ...
+13-02-2020 21:16:22.638 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(942) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - deregister  status: 200
+13-02-2020 21:16:22.648 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(929) - Completed shut down of DiscoveryClient
+13-02-2020 21:16:22.650 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Pausing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:16:23.444 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Stopping service [Tomcat]
+13-02-2020 21:16:23.447 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Destroying Spring FrameworkServlet 'dispatcherServlet'
+13-02-2020 21:16:23.456 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Stopping ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:16:23.460 [RMI TCP Connection(17)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Destroying ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:16:37.070 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStartupProfileInfo(655) - The following profiles are active: dev
+13-02-2020 21:16:38.026 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.context.scope.GenericScope.setSerializationId(295) - BeanFactory id=71e9f3bb-f316-3546-9378-3117445538c7
+13-02-2020 21:16:38.139 [main] INFO  Cheta314718101 - nes-user - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(330) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13-02-2020 21:16:38.326 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(92) - Tomcat initialized with port(s): 8081 (http)
+13-02-2020 21:16:38.334 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:16:38.335 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+13-02-2020 21:16:38.335 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.30]
+13-02-2020 21:16:38.480 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+13-02-2020 21:16:38.481 [main] INFO  Cheta314718101 - nes-user - org.springframework.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 1395 ms
+13-02-2020 21:16:38.660 [main] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.store.DeliveryStore.init(24) - Storing some users before initialisation
+13-02-2020 21:16:39.074 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13-02-2020 21:16:39.099 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:16:39.100 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:16:39.104 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:16:39.104 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:16:39.218 [main] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:16:42.937 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger.logWarning(106) - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+13-02-2020 21:16:42.977 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning(81) - Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+13-02-2020 21:16:43.017 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.InstanceInfoFactory.create(72) - Setting initial instance status as: STARTING
+13-02-2020 21:16:43.053 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(365) - Initializing Eureka in region us-east-1
+13-02-2020 21:16:43.197 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(70) - Using JSON encoding codec LegacyJacksonJson
+13-02-2020 21:16:43.197 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(71) - Using JSON decoding codec LegacyJacksonJson
+13-02-2020 21:16:43.311 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(80) - Using XML encoding codec XStreamXml
+13-02-2020 21:16:43.311 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(81) - Using XML decoding codec XStreamXml
+13-02-2020 21:16:43.516 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:16:44.207 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:16:44.208 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:16:44.208 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:16:44.209 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:16:44.209 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:16:44.209 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: true
+13-02-2020 21:16:44.209 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:16:44.333 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:16:44.335 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.initScheduledTasks(1288) - Starting heartbeat executor: renew interval is: 30
+13-02-2020 21:16:44.337 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.InstanceInfoReplicator.<init>(60) - InstanceInfoReplicator onDemand update allowed rate per min is 4
+13-02-2020 21:16:44.341 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(465) - Discovery Client initialized at timestamp 1581608804339 with initial instances count: 0
+13-02-2020 21:16:44.342 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(41) - Registering application NES-USER with eureka with status UP
+13-02-2020 21:16:44.343 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1323) - Saw local status change event StatusChangeEvent [timestamp=1581608804343, current=UP, previous=STARTING]
+13-02-2020 21:16:44.345 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:16:44.345 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(147) - Context refreshed
+13-02-2020 21:16:44.365 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(150) - Found 1 custom documentation plugin(s)
+13-02-2020 21:16:44.408 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(41) - Scanning for api listing references
+13-02-2020 21:16:44.408 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:16:44.521 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Starting ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:16:44.547 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(204) - Tomcat started on port(s): 8081 (http) with context path ''
+13-02-2020 21:16:44.548 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(145) - Updating port to 8081
+13-02-2020 21:16:45.628 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStarted(61) - Started NESDeliveryApplication in 11.346 seconds (JVM running for 12.797)
+13-02-2020 21:17:14.337 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:17:14.337 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:17:14.337 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:17:14.337 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:17:14.337 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:17:14.337 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: false
+13-02-2020 21:17:14.337 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:17:14.372 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:18:09.680 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13-02-2020 21:18:09.681 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(525) - Initializing Servlet 'dispatcherServlet'
+13-02-2020 21:18:09.690 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(547) - Completed initialization in 8 ms
+13-02-2020 21:18:09.723 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect(524) - Attempting to connect to: [localhost:5672]
+13-02-2020 21:18:09.775 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection(497) - Created new connection: rabbitConnectionFactory#7bc44ce8:0/SimpleConnection@42b65b3e [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55368]
+13-02-2020 21:18:09.820 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - com.nagarro.nes.api.DeliveryController.getDeliveryDetailsByOrderID(40) - Recieved get Delivery request by order
+13-02-2020 21:18:09.821 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - com.nagarro.nes.services.impl.DeliveryServiceImpl.getDeliveryDetailsByOrderID(62) - Getting delivery with order:s
+13-02-2020 21:18:09.824 [http-nio-8081-exec-1] ERROR Cheta314718101 - nes-user - com.nagarro.nes.exceptions.advices.ExceptionController.handleException(144) - Exception with error code :notfound.delivery
+13-02-2020 21:20:13.510 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(159) - Application shutdown requested.
+13-02-2020 21:20:13.511 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(65) - Unregistering application NES-USER with eureka with status DOWN
+13-02-2020 21:20:13.512 [RMI TCP Connection(13)-127.0.0.1] WARN  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1321) - Saw local status change event StatusChangeEvent [timestamp=1581609013512, current=DOWN, previous=UP]
+13-02-2020 21:20:13.512 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:20:13.518 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown(208) - Shutting down ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:20:13.518 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:20:13.541 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(906) - Shutting down DiscoveryClient ...
+13-02-2020 21:20:16.542 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(940) - Unregistering ...
+13-02-2020 21:20:16.542 [DiscoveryClient-0] WARN  Cheta314718101 - nes-user - com.netflix.discovery.TimedSupervisorTask.run(88) - task supervisor shutting down, can't accept the task
+13-02-2020 21:20:16.548 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(942) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - deregister  status: 200
+13-02-2020 21:20:16.557 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(929) - Completed shut down of DiscoveryClient
+13-02-2020 21:20:16.558 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Pausing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:20:17.228 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Stopping service [Tomcat]
+13-02-2020 21:20:17.229 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Destroying Spring FrameworkServlet 'dispatcherServlet'
+13-02-2020 21:20:17.236 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Stopping ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:20:17.240 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Destroying ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:20:26.867 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStartupProfileInfo(655) - The following profiles are active: dev
+13-02-2020 21:20:27.922 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.context.scope.GenericScope.setSerializationId(295) - BeanFactory id=71e9f3bb-f316-3546-9378-3117445538c7
+13-02-2020 21:20:28.040 [main] INFO  Cheta314718101 - nes-user - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(330) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13-02-2020 21:20:28.259 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(92) - Tomcat initialized with port(s): 8081 (http)
+13-02-2020 21:20:28.266 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:20:28.267 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+13-02-2020 21:20:28.268 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.30]
+13-02-2020 21:20:28.421 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+13-02-2020 21:20:28.421 [main] INFO  Cheta314718101 - nes-user - org.springframework.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 1538 ms
+13-02-2020 21:20:28.593 [main] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.store.DeliveryStore.init(24) - Storing some users before initialisation
+13-02-2020 21:20:29.020 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13-02-2020 21:20:29.043 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:20:29.044 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:20:29.048 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:20:29.048 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:20:29.154 [main] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:20:32.560 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger.logWarning(106) - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+13-02-2020 21:20:32.602 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning(81) - Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+13-02-2020 21:20:32.642 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.InstanceInfoFactory.create(72) - Setting initial instance status as: STARTING
+13-02-2020 21:20:32.683 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(365) - Initializing Eureka in region us-east-1
+13-02-2020 21:20:32.847 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(70) - Using JSON encoding codec LegacyJacksonJson
+13-02-2020 21:20:32.847 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(71) - Using JSON decoding codec LegacyJacksonJson
+13-02-2020 21:20:32.966 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(80) - Using XML encoding codec XStreamXml
+13-02-2020 21:20:32.967 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(81) - Using XML decoding codec XStreamXml
+13-02-2020 21:20:33.197 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:20:33.852 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:20:33.853 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:20:33.853 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:20:33.853 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:20:33.853 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:20:33.853 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: true
+13-02-2020 21:20:33.853 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:20:33.985 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:20:33.987 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.initScheduledTasks(1288) - Starting heartbeat executor: renew interval is: 30
+13-02-2020 21:20:33.989 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.InstanceInfoReplicator.<init>(60) - InstanceInfoReplicator onDemand update allowed rate per min is 4
+13-02-2020 21:20:33.993 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(465) - Discovery Client initialized at timestamp 1581609033992 with initial instances count: 0
+13-02-2020 21:20:33.994 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(41) - Registering application NES-USER with eureka with status UP
+13-02-2020 21:20:33.995 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1323) - Saw local status change event StatusChangeEvent [timestamp=1581609033995, current=UP, previous=STARTING]
+13-02-2020 21:20:33.998 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(147) - Context refreshed
+13-02-2020 21:20:33.999 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:20:34.018 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(150) - Found 1 custom documentation plugin(s)
+13-02-2020 21:20:34.064 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:20:34.072 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(41) - Scanning for api listing references
+13-02-2020 21:20:34.197 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Starting ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:20:34.223 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(204) - Tomcat started on port(s): 8081 (http) with context path ''
+13-02-2020 21:20:34.224 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(145) - Updating port to 8081
+13-02-2020 21:20:35.221 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStarted(61) - Started NESDeliveryApplication in 11.317 seconds (JVM running for 12.849)
+13-02-2020 21:20:56.414 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13-02-2020 21:20:56.414 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(525) - Initializing Servlet 'dispatcherServlet'
+13-02-2020 21:20:56.423 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(547) - Completed initialization in 8 ms
+13-02-2020 21:20:56.458 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect(524) - Attempting to connect to: [localhost:8087]
+13-02-2020 21:20:56.502 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection(497) - Created new connection: rabbitConnectionFactory#40e37b06:0/SimpleConnection@4c3dfad6 [delegate=amqp://guest@127.0.0.1:8087/, localPort= 55585]
+13-02-2020 21:20:56.548 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - com.nagarro.nes.api.DeliveryController.getDeliveryDetailsByOrderID(40) - Recieved get Delivery request by order
+13-02-2020 21:20:56.548 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - com.nagarro.nes.services.impl.DeliveryServiceImpl.getDeliveryDetailsByOrderID(62) - Getting delivery with order:s
+13-02-2020 21:20:56.552 [http-nio-8081-exec-1] ERROR Cheta314718101 - nes-user - com.nagarro.nes.exceptions.advices.ExceptionController.handleException(144) - Exception with error code :notfound.delivery
+13-02-2020 21:21:03.987 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:21:03.988 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:21:03.988 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:21:03.988 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:21:03.988 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:21:03.988 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: false
+13-02-2020 21:21:03.988 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:21:04.029 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:25:33.871 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:25:49.025 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(159) - Application shutdown requested.
+13-02-2020 21:25:49.026 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(65) - Unregistering application NES-USER with eureka with status DOWN
+13-02-2020 21:25:49.027 [RMI TCP Connection(13)-127.0.0.1] WARN  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1321) - Saw local status change event StatusChangeEvent [timestamp=1581609349027, current=DOWN, previous=UP]
+13-02-2020 21:25:49.027 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:25:49.034 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown(208) - Shutting down ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:25:49.038 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:25:49.064 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(906) - Shutting down DiscoveryClient ...
+13-02-2020 21:25:52.066 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(940) - Unregistering ...
+13-02-2020 21:25:52.073 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(942) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - deregister  status: 200
+13-02-2020 21:25:52.083 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(929) - Completed shut down of DiscoveryClient
+13-02-2020 21:25:52.085 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Pausing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:25:53.451 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Stopping service [Tomcat]
+13-02-2020 21:25:53.454 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Destroying Spring FrameworkServlet 'dispatcherServlet'
+13-02-2020 21:25:53.462 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Stopping ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:25:53.468 [RMI TCP Connection(13)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Destroying ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:26:09.129 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStartupProfileInfo(655) - The following profiles are active: dev
+13-02-2020 21:26:10.388 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.context.scope.GenericScope.setSerializationId(295) - BeanFactory id=2768e56a-3ce6-3c71-8f1d-96f9774746e5
+13-02-2020 21:26:10.556 [main] INFO  Cheta314718101 - nes-user - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(330) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13-02-2020 21:26:10.855 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(92) - Tomcat initialized with port(s): 8081 (http)
+13-02-2020 21:26:10.870 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:26:10.871 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+13-02-2020 21:26:10.872 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.30]
+13-02-2020 21:26:11.149 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+13-02-2020 21:26:11.149 [main] INFO  Cheta314718101 - nes-user - org.springframework.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 1994 ms
+13-02-2020 21:26:11.417 [main] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.store.DeliveryStore.init(24) - Storing some users before initialisation
+13-02-2020 21:26:12.238 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13-02-2020 21:26:12.261 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:26:12.261 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:26:12.266 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:26:12.267 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:26:12.450 [main] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:26:19.890 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger.logWarning(106) - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+13-02-2020 21:26:19.951 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning(81) - Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+13-02-2020 21:26:20.066 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.InstanceInfoFactory.create(72) - Setting initial instance status as: STARTING
+13-02-2020 21:26:20.138 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(365) - Initializing Eureka in region us-east-1
+13-02-2020 21:26:20.418 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(70) - Using JSON encoding codec LegacyJacksonJson
+13-02-2020 21:26:20.418 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(71) - Using JSON decoding codec LegacyJacksonJson
+13-02-2020 21:26:20.624 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(80) - Using XML encoding codec XStreamXml
+13-02-2020 21:26:20.624 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(81) - Using XML decoding codec XStreamXml
+13-02-2020 21:26:20.941 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:26:22.742 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:26:22.742 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:26:22.742 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:26:22.746 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:26:22.747 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:26:22.747 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: true
+13-02-2020 21:26:22.747 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:26:22.915 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:26:22.917 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.initScheduledTasks(1288) - Starting heartbeat executor: renew interval is: 30
+13-02-2020 21:26:22.920 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.InstanceInfoReplicator.<init>(60) - InstanceInfoReplicator onDemand update allowed rate per min is 4
+13-02-2020 21:26:22.996 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(465) - Discovery Client initialized at timestamp 1581609382994 with initial instances count: 0
+13-02-2020 21:26:22.998 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(41) - Registering application NES-USER with eureka with status UP
+13-02-2020 21:26:22.999 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1323) - Saw local status change event StatusChangeEvent [timestamp=1581609382999, current=UP, previous=STARTING]
+13-02-2020 21:26:23.002 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:26:23.004 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(147) - Context refreshed
+13-02-2020 21:26:23.028 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(150) - Found 1 custom documentation plugin(s)
+13-02-2020 21:26:23.099 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:26:23.171 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(41) - Scanning for api listing references
+13-02-2020 21:26:23.362 [main] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect(524) - Attempting to connect to: [localhost:8087]
+13-02-2020 21:26:23.463 [main] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection(497) - Created new connection: rabbitConnectionFactory#2e66bc32:0/SimpleConnection@8077c97 [delegate=amqp://guest@127.0.0.1:8087/, localPort= 55920]
+13-02-2020 21:26:23.570 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Starting ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:26:23.621 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(204) - Tomcat started on port(s): 8081 (http) with context path ''
+13-02-2020 21:26:23.622 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(145) - Updating port to 8081
+13-02-2020 21:26:26.167 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStarted(61) - Started NESDeliveryApplication in 23.772 seconds (JVM running for 26.905)
+13-02-2020 21:26:52.932 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:26:52.933 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:26:52.934 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:26:52.934 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:26:52.934 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:26:52.934 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: false
+13-02-2020 21:26:52.934 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:26:52.972 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:27:58.597 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(159) - Application shutdown requested.
+13-02-2020 21:27:58.631 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(65) - Unregistering application NES-USER with eureka with status DOWN
+13-02-2020 21:27:58.632 [RMI TCP Connection(8)-127.0.0.1] WARN  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1321) - Saw local status change event StatusChangeEvent [timestamp=1581609478632, current=DOWN, previous=UP]
+13-02-2020 21:27:58.632 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:27:58.640 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:27:58.645 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doShutdown(640) - Waiting for workers to finish.
+13-02-2020 21:27:59.325 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doShutdown(643) - Successfully waited for workers to finish.
+13-02-2020 21:27:59.333 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.shutdown(1231) - Shutdown ignored - container is not active already
+13-02-2020 21:27:59.334 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown(208) - Shutting down ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:27:59.356 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(906) - Shutting down DiscoveryClient ...
+13-02-2020 21:28:02.363 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(940) - Unregistering ...
+13-02-2020 21:28:02.369 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(942) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - deregister  status: 200
+13-02-2020 21:28:02.378 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(929) - Completed shut down of DiscoveryClient
+13-02-2020 21:28:02.379 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Pausing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:28:03.485 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Stopping service [Tomcat]
+13-02-2020 21:28:03.496 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Stopping ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:28:03.500 [RMI TCP Connection(8)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Destroying ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:28:17.634 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStartupProfileInfo(655) - The following profiles are active: dev
+13-02-2020 21:28:19.473 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.context.scope.GenericScope.setSerializationId(295) - BeanFactory id=2768e56a-3ce6-3c71-8f1d-96f9774746e5
+13-02-2020 21:28:19.692 [main] INFO  Cheta314718101 - nes-user - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(330) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13-02-2020 21:28:20.020 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(92) - Tomcat initialized with port(s): 8081 (http)
+13-02-2020 21:28:20.030 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:28:20.031 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+13-02-2020 21:28:20.031 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.30]
+13-02-2020 21:28:20.228 [main] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+13-02-2020 21:28:20.228 [main] INFO  Cheta314718101 - nes-user - org.springframework.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 2569 ms
+13-02-2020 21:28:20.504 [main] DEBUG Cheta314718101 - nes-user - com.nagarro.nes.store.DeliveryStore.init(24) - Storing some users before initialisation
+13-02-2020 21:28:21.051 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13-02-2020 21:28:21.081 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:28:21.082 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:28:21.086 [main] WARN  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(121) - No URLs will be polled as dynamic configuration sources.
+13-02-2020 21:28:21.087 [main] INFO  Cheta314718101 - nes-user - com.netflix.config.sources.URLConfigurationSource.<init>(122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13-02-2020 21:28:21.210 [main] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:28:28.179 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger.logWarning(106) - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+13-02-2020 21:28:28.250 [main] WARN  Cheta314718101 - nes-user - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning(81) - Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+13-02-2020 21:28:28.343 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.InstanceInfoFactory.create(72) - Setting initial instance status as: STARTING
+13-02-2020 21:28:28.423 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(365) - Initializing Eureka in region us-east-1
+13-02-2020 21:28:28.665 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(70) - Using JSON encoding codec LegacyJacksonJson
+13-02-2020 21:28:28.665 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(71) - Using JSON decoding codec LegacyJacksonJson
+13-02-2020 21:28:28.819 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(80) - Using XML encoding codec XStreamXml
+13-02-2020 21:28:28.819 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>(81) - Using XML decoding codec XStreamXml
+13-02-2020 21:28:29.162 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:28:31.158 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:28:31.159 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:28:31.160 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:28:31.160 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:28:31.160 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:28:31.161 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: true
+13-02-2020 21:28:31.161 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:28:31.370 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:28:31.373 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.initScheduledTasks(1288) - Starting heartbeat executor: renew interval is: 30
+13-02-2020 21:28:31.375 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.InstanceInfoReplicator.<init>(60) - InstanceInfoReplicator onDemand update allowed rate per min is 4
+13-02-2020 21:28:31.407 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.<init>(465) - Discovery Client initialized at timestamp 1581609511406 with initial instances count: 0
+13-02-2020 21:28:31.414 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(41) - Registering application NES-USER with eureka with status UP
+13-02-2020 21:28:31.415 [main] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1323) - Saw local status change event StatusChangeEvent [timestamp=1581609511415, current=UP, previous=STARTING]
+13-02-2020 21:28:31.418 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(147) - Context refreshed
+13-02-2020 21:28:31.418 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:28:31.444 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(150) - Found 1 custom documentation plugin(s)
+13-02-2020 21:28:31.519 [main] INFO  Cheta314718101 - nes-user - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(41) - Scanning for api listing references
+13-02-2020 21:28:31.520 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:28:31.711 [main] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect(524) - Attempting to connect to: [localhost:8087]
+13-02-2020 21:28:31.821 [main] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection(497) - Created new connection: rabbitConnectionFactory#1cd3b138:0/SimpleConnection@799c8758 [delegate=amqp://guest@127.0.0.1:8087/, localPort= 56030]
+13-02-2020 21:28:31.925 [main] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Starting ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:28:31.964 [main] INFO  Cheta314718101 - nes-user - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(204) - Tomcat started on port(s): 8081 (http) with context path ''
+13-02-2020 21:28:31.965 [main] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(145) - Updating port to 8081
+13-02-2020 21:28:33.941 [main] INFO  Cheta314718101 - nes-user - com.nagarro.nes.NESDeliveryApplication.logStarted(61) - Started NESDeliveryApplication in 21.404 seconds (JVM running for 24.485)
+13-02-2020 21:28:47.649 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13-02-2020 21:28:47.650 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(525) - Initializing Servlet 'dispatcherServlet'
+13-02-2020 21:28:47.657 [http-nio-8081-exec-1] INFO  Cheta314718101 - nes-user - org.springframework.web.servlet.DispatcherServlet.initServletBean(547) - Completed initialization in 7 ms
+13-02-2020 21:28:47.697 [http-nio-8081-exec-1] ERROR Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet].log(175) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.amqp.support.converter.MessageConversionException: Failed to convert Message content] with root cause
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.springframework.messaging.support.MessageBuilder and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1191)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:404)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:71)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:33)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper._configAndWriteValue(ObjectMapper.java:4094)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3404)
+	at org.springframework.amqp.support.converter.AbstractJackson2MessageConverter.createMessage(AbstractJackson2MessageConverter.java:337)
+	at org.springframework.amqp.support.converter.AbstractMessageConverter.toMessage(AbstractMessageConverter.java:70)
+	at org.springframework.amqp.support.converter.AbstractMessageConverter.toMessage(AbstractMessageConverter.java:58)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertMessageIfNecessary(RabbitTemplate.java:1758)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1075)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1068)
+	at com.nagarro.nes.api.DeliveryController.getDeliveryDetailsByOrderID(DeliveryController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+13-02-2020 21:29:01.377 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(976) - Disable delta property : false
+13-02-2020 21:29:01.378 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(977) - Single vip registry refresh property : null
+13-02-2020 21:29:01.379 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(978) - Force full registry fetch : false
+13-02-2020 21:29:01.379 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(979) - Application is null : false
+13-02-2020 21:29:01.379 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(980) - Registered Applications size is zero : true
+13-02-2020 21:29:01.380 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.fetchRegistry(982) - Application version is -1: false
+13-02-2020 21:29:01.389 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1065) - Getting all instance registry info from the eureka server
+13-02-2020 21:29:01.442 [DiscoveryClient-CacheRefreshExecutor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(1074) - The response status is 200
+13-02-2020 21:33:31.197 [AsyncResolver-bootstrap-executor-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints(43) - Resolving eureka endpoints via configuration
+13-02-2020 21:34:13.931 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(159) - Application shutdown requested.
+13-02-2020 21:34:13.932 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(65) - Unregistering application NES-USER with eureka with status DOWN
+13-02-2020 21:34:13.933 [RMI TCP Connection(14)-127.0.0.1] WARN  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.notify(1321) - Saw local status change event StatusChangeEvent [timestamp=1581609853933, current=DOWN, previous=UP]
+13-02-2020 21:34:13.933 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(844) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081: registering service...
+13-02-2020 21:34:13.941 [DiscoveryClient-InstanceInfoReplicator-0] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.register(853) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - registration status: 204
+13-02-2020 21:34:13.943 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doShutdown(640) - Waiting for workers to finish.
+13-02-2020 21:34:14.585 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doShutdown(643) - Successfully waited for workers to finish.
+13-02-2020 21:34:14.592 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.shutdown(1231) - Shutdown ignored - container is not active already
+13-02-2020 21:34:14.592 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown(208) - Shutting down ExecutorService 'applicationTaskExecutor'
+13-02-2020 21:34:14.605 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(906) - Shutting down DiscoveryClient ...
+13-02-2020 21:34:17.608 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(940) - Unregistering ...
+13-02-2020 21:34:17.614 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.unregister(942) - DiscoveryClient_NES-USER/Cheta314718101.Nagarro.local:nes-user:8081 - deregister  status: 200
+13-02-2020 21:34:17.622 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - com.netflix.discovery.DiscoveryClient.shutdown(929) - Completed shut down of DiscoveryClient
+13-02-2020 21:34:17.624 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Pausing ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:34:18.292 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.StandardService.log(173) - Stopping service [Tomcat]
+13-02-2020 21:34:18.294 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log(173) - Destroying Spring FrameworkServlet 'dispatcherServlet'
+13-02-2020 21:34:18.301 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Stopping ProtocolHandler ["http-nio-8081"]
+13-02-2020 21:34:18.307 [RMI TCP Connection(14)-127.0.0.1] INFO  Cheta314718101 - nes-user - org.apache.coyote.http11.Http11NioProtocol.log(173) - Destroying ProtocolHandler ["http-nio-8081"]
